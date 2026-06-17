@@ -1,8 +1,0 @@
-{{- $groups := (where .Site.RegularPages "Type" "blog").GroupByDate "2006 - January" -}}
-{{- range $groups }}
-## {{ .Key }}
-
-{{ range (.Pages.ByDate.Reverse) -}}
-- `{{ .Date.Format "2006-01-02" }}` [{{ .Title }}]({{ .RelPermalink }})
-{{ end }}
-{{ end -}}
