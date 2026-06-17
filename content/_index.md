@@ -1,6 +1,8 @@
 ---
 title: AK Bulletin
-type: blog
 cascade:
   type: blog
 ---
+Welcome. Recent writing, newest first.
+
+{{% post-archive %}}
