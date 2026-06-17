@@ -1,6 +1,8 @@
 ---
 title: About
-type: about
+type: page
+_build:
+  list: false
 ---
 
-This is the about page.
+Write your about text here.
