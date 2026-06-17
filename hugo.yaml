@@ -1,6 +1,8 @@
 # Hugo configuration file
 title: AK Bulletin
 
+baseURL: "https://yunghk.github.io/big-slick/"
+
 # import hextra as module
 module:
   imports:
