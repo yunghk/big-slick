@@ -1,48 +1,43 @@
-# Hugo configuration file
+# Hugo configuration
 title: AK Bulletin
-
 baseURL: "https://yunghk.github.io/big-slick/"
+defaultContentLanguage: en
+enableRobotsTXT: true
+enableEmoji: true
 
-# import hextra as module
 module:
   imports:
     - path: github.com/imfing/hextra
 
 markup:
-  # allow raw html
   goldmark:
     renderer:
       unsafe: true
-
-  # enable hextra syntax highlight
   highlight:
     noClasses: false
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Blog
+      pageRef: /blog
       weight: 1
     - name: About
       pageRef: /about
       weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 3
     - name: Search
-      weight: 4
+      weight: 3
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 4
+      url: "https://github.com/yunghk"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
+    - name: RSS
+      weight: 5
+      url: "https://yunghk.github.io/big-slick/index.xml"
       params:
-        icon: x-twitter
+        icon: rss
 
 params:
   navbar:
@@ -50,9 +45,10 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: true
 
+  # "Edit this page" links, off for a personal blog.
+  # To turn on, set enable: true and point base at your repo's /content.
   editURL:
-    enable: true
-    base: "https://github.com/yunghk/"
+    enable: false
