@@ -18,9 +18,6 @@ markup:
 
 menu:
   main:
-    - name: Blog
-      pageRef: /blog
-      weight: 1
     - name: About
       pageRef: /about
       weight: 2
@@ -40,15 +37,15 @@ menu:
         icon: rss
 
 params:
+  blog:
+    list:
+      sortBy: date
+      sortOrder: desc
   navbar:
     displayTitle: true
     displayLogo: false
-
   footer:
     displayCopyright: true
     displayPoweredBy: true
-
-  # "Edit this page" links, off for a personal blog.
-  # To turn on, set enable: true and point base at your repo's /content.
   editURL:
     enable: false
